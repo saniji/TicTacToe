@@ -169,13 +169,13 @@ def makeMove(board, player, mode):
 def pvc():
     while True:
         try:
-            order = int(input('Enter to play 1st or 2nd: '))
+            order = int(input('Bermain Sebagai Player 1st atau 2nd: '))
             if not (order == 1 or order == 2):
-                print('Please pick 1 or 2')
+                print('Pilih Player 1 atau 2')
             else:
                 break
         except(KeyError, ValueError):
-            print('Enter a number')
+            print('Input Angka')
 
     Clearboard(board)
     if order == 2:
